@@ -14,6 +14,9 @@
 """
 import os
 os.system('CLS')
+import time
+start = time.perf_counter()
+#print(start)
 
 #Пример Вани
 n = int(input("Введите числа: "))
@@ -23,6 +26,8 @@ while n != 0:
     if max_number < n:
         max_number = n
 print(f"Максимальное значение до 0 равно: {max_number}")
+stop = time.perf_counter()
+print(stop - start)
 
 #Второй вариант
 # Яна:
